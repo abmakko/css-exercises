@@ -8,10 +8,23 @@ body {
   height: 72px;
   background: darkmagenta;
   color: white;
+  font-size: 32px;
+  font-weight: 900;
+  padding-left: 16px;
+  line-height: 72px; 
+}
+
+.upper-body{
+  display: flex;
+}
+
+ul{
+  list-style: none;
+  padding-left: 16px;
 }
 
 .footer {
-  height: 72px;
+  min-height: 72px;
   background: #eee;
   color: darkmagenta;
 }
@@ -20,10 +33,49 @@ body {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  flex-shrink: 0;
+  
+  
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  
+}
+
+.main-content{
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  padding: 32px;
+}
+
+.main-content .card{
+  max-width: 200px;
+  min-width: 150px;
+  padding: 10px;
+}
+
+a, a:link{
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+a:hover{
+  color: darkblue;
+}
+
+.body-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
