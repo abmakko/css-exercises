@@ -8,6 +8,37 @@ body, html {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+  display: grid;
+  grid-auto-columns: 1fr;
+  
+  gap: 1em;
+  margin-inline: auto;
+  grid-template-areas: 
+    'header header header header'
+    'sidebar nav nav nav'
+    'sidebar article article article'
+    'sidebar article article article'
+    'footer footer footer footer';
+}
+
+.container div:nth-child(1){
+  grid-area: header;
+}
+
+.container div:nth-child(2){
+  grid-area: sidebar;
+}
+
+.container div:nth-child(3){
+  grid-area: nav;
+}
+
+.container div:nth-child(4){
+  grid-area: article;
+}
+
+.container div:nth-child(5){
+  grid-area: footer;
 }
 
 .container div {
